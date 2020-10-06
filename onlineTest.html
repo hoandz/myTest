@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Test</title>
+  <style type="text/css">
+    body{
+      margin: 0;
+      padding: 0;
+      background: #f3f3f3;
+    }
+    .wraper{
+      width: 650px;
+      margin: 0 auto;
+      padding-bottom: 40px;
+    }
+    .text-head{
+      text-align: center;
+      width: 80%;
+      margin: 0 auto;
+      padding-top: 20px;
+    }
+    .header{
+      width: 100%;
+      background: white;
+      padding-top: 20px;
+    }
+    .logo{
+      width: 100%;
+      height: 40px;
+      background: #be0f34;
+    }
+    .logo a{
+      text-decoration: none;
+      color: white;
+      line-height: 40px;
+      padding-left: 23px;
+    }
+    .navbar{
+      height: 36px;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar li{
+      list-style: none;
+      display: inline-block;
+      margin-left: 23px;
+      font-size: 13px;
+      line-height: 36px;
+      text-transform: uppercase;
+    }
+    .navbar li a{
+      text-decoration: none;
+      color: black;
+    }
+    .banner{
+      height: 346px;
+      margin-top: 11px;
+    }
+    .banner-slogan{
+      text-align: center;
+      color: white;
+      height: 43px;
+      background: #b9ab95;
+    }
+    .banner-slogan ul{
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .banner-slogan ul li{
+      display: inline-block;
+      list-style: none;
+      line-height: 43px;
+    }
+    .banner-slogan ul li img{
+      width: 21.92px;
+      margin-top: calc((43px - 21.92px)/2);
+    }
+    .banner-img{
+      width: 100%;
+      height: 346px;
+      background-image: url('https://hoanghamobile.com/tin-tuc/wp-content/uploads/2020/05/tai-tho-tren-iphone-1.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .news-item-title{
+      width: 310px;
+      min-height: 121px;
+      overflow: hidden;
+      background: white;
+      left: 23px;
+      padding: 20px 0px 20px 19px;
+      margin: 42px 0px 0px 20px;
+    }
+    .news-item-title h2{
+      margin: 0;
+      font-size: 32px;
+      color: #be0f34;
+    }
+    .news-item-title a{
+      text-decoration: none;
+      color: #be0f34;
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+    .main-content{
+      width: 100%;
+      margin-top: 11px;
+      background: white;
+    }
+    .title-main-content{
+      text-align: center;
+      padding-top: 26px;
+    }
+    .title-main-content h2{
+      margin: 0;
+    }
+    .title-main-content p{
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+    .product{
+      width: 606px;
+      margin: 0 auto;
+      min-height: 100px;
+      overflow: hidden;
+      margin-top: 70px;
+    }
+    .item{
+      width: 202px;
+      box-sizing: border-box;
+      float: left;
+    }
+    .header-item{
+      height: 306px;
+    }
+    .header-item img{
+      width: 180px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+      height: 266px;
+    }
+    .energy .title-item{
+      color: #ff6c00;
+    }
+    .repair .title-item{
+     color: #435cc8; 
+    }
+    .detox .title-item{
+      color: #3daf2c;
+    }
+    .title-item {
+      text-align: center;
+      height: 40px;
+      margin: 0;
+      line-height: 40px;
+      font-weight: normal;
+      font-size: 42px;
+    }
+    .energy .description{
+      background: #ff6c00;
+    }
+    .energy .btn-see{
+      background: #ff6c00;
+    }
+    .repair .btn-see{
+      background: #435cc8;
+    }
+    .detox .btn-see{
+      background: #3daf2c;
+    }
+    .repair .description{
+      background: #435cc8;
+    }
+    .detox .description{
+      background: #3daf2c;
+    }
+    .description{
+      height: 320px;
+    }
+    .container-item{
+      width: 160px;
+      margin: 0 auto;
+      height: 200px;
+    }
+    .item-des{
+      width: 100%;
+      min-height: 20px;
+      overflow: hidden;
+      padding-top: 20px;
+    }
+    .item-des img{
+      width: 30px;
+      height: 27px;
+      float: left;
+      margin-top: 4px;
+    }
+    .item-des p{
+      float: left;
+      width: calc(100% - 30px);
+      margin: 0px;
+      box-sizing: border-box;
+      padding-left: 8px;
+      color: white;
+    }
+    .footer-des{
+      width: 160px;
+      margin: 0 auto;
+      height: 100px;
+      color: white;
+    }
+    .footer-des p{
+      margin: 0;
+    }
+    .button{
+      background: white;
+      color: red;
+      width: 145px;
+      padding: 5px 0px;
+      text-align: center;
+      margin-top: 8px;
+    }
+    .video{
+      width: 202px;
+      height: 145px;
+    }
+    .video img{
+      width: 100%;
+      height: 100%;
+    }
+    .btn-see{
+      height: 46px;
+      line-height: 46px;
+      text-align: center;
+      color: white;
+    }
+    .footer-content{
+      height: 70px;
+      line-height: 70px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #be0f34;
+    }
+    .footer-wraper{
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    .footer-wraper li{
+      display: inline-block;
+    }
+    .copyright{
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 20px;
+      color: #ccc;
+    }
+    /* -------------------------------------
+    RESPONSIVE AND MOBILE FRIENDLY STYLES
+    ------------------------------------- */
+    @media only screen and (max-width: 620px) {
+      .product{
+        width: 100%;
+      }
+      .item {
+        width: 33.3%;
+      }
+      .container-item {
+        width: 160px;
+      }
+      .footer-des {
+        width: 160px;
+      }
+      .video {
+        width: 100%;
+      }
+      .video img{
+        object-fit: cover;
+      }
+      .news-item-title{
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      .header-item {
+        overflow: hidden;
+      }
+    }
+    /* -------------------------------------
+    END RESPONSIVE AND MOBILE FRIENDLY STYLES
+    ------------------------------------- */
+  </style>
+</head>
+<body>
+  <div class="wraper">
+    <div class="text-head">
+      <strong>Lorem ipsum dolor sit, amet consectetur, adipisicing elit.</strong>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, obcaecati ipsam recusandae at possimus reprehenderit itaque dolores explicabo. Ut nihil ea a modi ducimus. Blanditiis voluptates commodi harum, eum quas.</p>
+    </div>
+    <div class="header">
+      <div class="logo">
+        <a href="#" target="_blank">LOGO</a>
+      </div>
+      <ul class="navbar">
+        <li><a href="#" target="_blank">lorem</a></li>
+        <li><a href="#" target="_blank">ipsum</a></li>
+        <li><a href="#" target="_blank">dolor</a></li>
+        <li><a href="#" target="_blank">amet sit</a></li>
+        <li><a href="#" target="_blank">eiusmod</a></li>
+        <li><a href="#" target="_blank">tempor</a></li>
+        <li><a href="#" target="_blank">incididunt</a></li>
+        <li><a href="#" target="_blank">none</a></li>
+      </ul>
+    </div>
+    <div class="banner">
+      <div class="banner-img">
+        <div class="banner-slogan">
+          <ul>
+            <li>Lorem ipsum dolor sit, amet consectetur</li>
+          </ul>
+        </div>
+        <div class="news-item-title">
+          <h2>Lorem ipsum dolor sit, amet</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, obcaecati ipsam recusandae </p>
+          <a href="#" target="_blank">lorem ipsum</a>
+        </div>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="title-main-content">
+        <h2>Lorem ipsum dolor sit, amet consectetur, adipisicing</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, obcaecati ipsam recusandae at possimus reprehenderit itaque dolores explicabo. Ut nihil ea a modi ducimus. Blanditiis voluptates commodi harum, eum quas.</p>
+      </div>
+      <div class="product">
+        <div class="item energy">
+          <div class="header-item">
+            <h2 class="title-item">Energy</h2>
+            <img src="https://i.imgur.com/hoWUQcx.png" alt="energy">
+          </div>
+          <div class="description">
+            <div class="container-item">
+              <div class="item-des">
+                <img src="https://i.imgur.com/IxhgG1p.png" alt="abc">
+                <p>Lorem ipsum dolor sit</p>
+              </div>
+              <div class="item-des">
+                <img src="https://i.imgur.com/IxhgG1p.png" alt="abc">
+                <p>Lorem ipsum dolor sit</p>
+              </div>
+              <div class="item-des">
+                <img src="https://i.imgur.com/IxhgG1p.png" alt="abc">
+                <p>Lorem ipsum dolor sit</p>
+              </div>
+            </div>
+            <div class="footer-des">
+              <p>39$</p>
+              <p>Lorem ipsum dolor sit, amet</p>
+              <div class="button">Lorem ipsum</div>
+            </div> 
+          </div>
+          <div class="video">
+            <img src="https://i.imgur.com/EDC9uxv.png" alt="abc">
+          </div>
+          <div class="btn-see">Lorem ipsum</div>
+        </div>
+        <div class="item repair">
+          <div class="header-item">
+            <h2 class="title-item">Repair</h2>
+            <img src="https://i.imgur.com/6zsIZ06.png" alt="energy">
+          </div>
+          <div class="description">
+            <div class="container-item">
+              <div class="item-des">
+                <img src="https://i.imgur.com/IxhgG1p.png" alt="abc">
+                <p>Lorem ipsum dolor sit</p>
+              </div>
+              <div class="item-des">
+                <img src="https://i.imgur.com/IxhgG1p.png" alt="abc">
+                <p>Lorem ipsum dolor sit</p>
+              </div>
+              <div class="item-des">
+                <img src="https://i.imgur.com/IxhgG1p.png" alt="abc">
+                <p>Lorem ipsum dolor sit</p>
+              </div>
+            </div>
+            <div class="footer-des">
+              <p>39$</p>
+              <p>Lorem ipsum dolor sit, amet</p>
+              <div class="button">Lorem ipsum</div>
+            </div> 
+          </div>
+          <div class="video">
+            <img src="https://i.imgur.com/toZPXkb.png" alt="abc">
+          </div>
+          <div class="btn-see">Lorem ipsum</div>
+        </div>
+        <div class="item detox">
+          <div class="header-item">
+            <h2 class="title-item">Detox</h2>
+            <img src="https://i.imgur.com/FIyZgJM.png" alt="energy">
+          </div>
+          <div class="description">
+            <div class="container-item">
+              <div class="item-des">
+                <img src="https://i.imgur.com/IxhgG1p.png" alt="abc">
+                <p>Lorem ipsum dolor sit</p>
+              </div>
+              <div class="item-des">
+                <img src="https://i.imgur.com/IxhgG1p.png" alt="abc">
+                <p>Lorem ipsum dolor sit</p>
+              </div>
+            </div>
+            <div class="footer-des">
+              <p>39$</p>
+              <p>Lorem ipsum dolor sit, amet</p>
+              <div class="button">Lorem ipsum</div>
+            </div> 
+          </div>
+          <div class="video">
+            <img src="https://i.imgur.com/YWFSs3t.png" alt="abc">
+          </div>
+          <div class="btn-see">Lorem ipsum</div>
+        </div>
+      </div>
+      <div class="footer-content">
+        lorem ipsum
+      </div>
+    </div>
+    <ul class="footer-wraper">
+      <li>Lorem ipsum</li>
+      <li>|</li>
+      <li>Lorem ipsum consectetur</li>
+      <li>|</li>
+      <li>Adipisicing elit</li>
+    </ul>
+    <p class="copyright">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in volup</p>
+    <p class="copyright">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqu</p>
+  </div>   
+</body>
+</html>
+
+
+
+
+
+
+
+
